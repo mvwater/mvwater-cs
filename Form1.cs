@@ -17,6 +17,8 @@ namespace mvwatercs
             InitializeComponent();
         }
 
+
+        /*
         public void CreateSimpleMenu()
         {
             //create a high level menu container
@@ -39,11 +41,12 @@ namespace mvwatercs
             //add menu to form
             this.Controls.Add(strip);
 
-            InitializeComponent();
+            //InitializeComponent();
         }
         private void menu1ToolStripItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You selected MenuItem_1");
         }
+        */
     }
 }
