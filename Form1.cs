@@ -16,6 +16,9 @@ namespace mvwatercs
         {
             InitializeComponent();
         }
-
+        private void menu1ToolStripItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You selected MenuItem_1");
+        }
     }
 }
