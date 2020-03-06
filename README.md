@@ -22,3 +22,7 @@ As it stands, the program is still too small to warrant adaptation for an instal
 
 - Do NOT delete empty C# functions without checking for references! Only delete functions that are empty AND have zero references!
 - It is *very* easy to think that a function has no references. Check the solution in Visual Studio FIRST.
+
+## Contributions
+
+Please read the contributor guidelines [here](https://github.com/mvwater/mvwater-cs/blob/master/CONTRIBUTING.md).
