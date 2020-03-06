@@ -72,5 +72,40 @@ namespace mvwater_netfw
             search newSearchBox = new search();
             newSearchBox.Show();
         }
+
+        private void dropConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dbDropConnection newDroppedConn = new dbDropConnection();
+            newDroppedConn.Show();
+        }
+
+        private void connectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            dbEstablishConnection newConnectionBox = new dbEstablishConnection();
+            newConnectionBox.Show();
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            dbEstablishConnection newConnectionBox = new dbEstablishConnection();
+            newConnectionBox.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            dbDropConnection newDroppedConn = new dbDropConnection();
+            newDroppedConn.Show();
+        }
+
+        private void toolStripLabel3_Click(object sender, EventArgs e)
+        {
+            dbDropConnection newDroppedConn = new dbDropConnection();
+            newDroppedConn.Show();
+        }
     }
 }

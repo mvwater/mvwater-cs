@@ -52,7 +52,12 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
-    <Compile Include="dbDropConnection.cs" />
+    <Compile Include="dbDropConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbDropConnection.Designer.cs">
+      <DependentUpon>dbDropConnection.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbEstablishConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +81,9 @@
     <Compile Include="Status1.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbDropConnection.resx">
+      <DependentUpon>dbDropConnection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dbEstablishConnection.resx">
       <DependentUpon>dbEstablishConnection.cs</DependentUpon>
