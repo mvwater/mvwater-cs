@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mvwatercs
+namespace mvwater_netfw
 {
     public partial class Form1 : Form
     {
@@ -17,36 +17,37 @@ namespace mvwatercs
             InitializeComponent();
         }
 
-
-        /*
-        public void CreateSimpleMenu()
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
-            //create a high level menu container
-            MenuStrip strip = new MenuStrip();
-
-            //create a top level menu item called "File"
-            //let F be the access key
-            //this is just a windows default YAY!
-            ToolStripMenuItem fileItem = new ToolStripMenuItem("&File");
-
-            //create one sub menu item on this menu
-            fileItem.DropDownItems.Add("First menu item");
-
-            //create another sub menu item on that same meu
-            fileItem.DropDownItems.Add("Second menu item");
-
-            //add the high level menu item to the menu container
-            strip.Items.Add(fileItem);
-
-            //add menu to form
-            this.Controls.Add(strip);
-
-            //InitializeComponent();
+            var alpha = new Status1();
+            alpha.mainStatus();
         }
-        private void menu1ToolStripItem_Click(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("You selected MenuItem_1");
+
         }
-        */
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(1);
+        }
+
+        private void tToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 newAboutBox = new AboutBox1();
+            newAboutBox.Show();
+        }
+
+        private void establishConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dbEstablishConnection newConnectionBox = new dbEstablishConnection();
+            newConnectionBox.Show();
+        }
     }
 }
