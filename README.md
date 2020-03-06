@@ -1,4 +1,5 @@
 # mvwater-test
+
 Desktop version testing. Don't try to use this, it's all steaming piles of scuffed rat shit.
 
 ## Dependencies
@@ -11,8 +12,13 @@ Desktop version testing. Don't try to use this, it's all steaming piles of scuff
 - Designed for Microsoft Windows 10 1904
 - Could possibly run on macOS 10.14 if ported properly; reliability not guaranteed
 
+## Installation
+
+No installation required. You may run the `.exe` file inside of the debug folder, which will remained tracked with daily builds.
+
+As it stands, the program is still too small to warrant adaptation for an installer. As it gains heft, installation may be transitioned to an open-source installer.
+
 ## Warnings
 
 - Do NOT delete empty C# functions without checking for references! Only delete functions that are empty AND have zero references!
 - It is *very* easy to think that a function has no references. Check the solution in Visual Studio FIRST.
-
