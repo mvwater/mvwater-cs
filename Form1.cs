@@ -49,5 +49,28 @@ namespace mvwater_netfw
             dbEstablishConnection newConnectionBox = new dbEstablishConnection();
             newConnectionBox.Show();
         }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            search newSearchBox = new search();
+            newSearchBox.Show();
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            search newSearchBox = new search();
+            newSearchBox.Show();
+        }
+
+        private void newSearchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            search newSearchBox = new search();
+            newSearchBox.Show();
+        }
     }
 }
