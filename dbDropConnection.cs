@@ -24,6 +24,7 @@ namespace mvwater_netfw
             string connectionString = null;
             cnn = new SqlConnection(connectionString);
             cnn.Close();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

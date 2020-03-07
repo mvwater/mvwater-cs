@@ -315,8 +315,8 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(191, 36);
-            this.toolStripLabel2.Text = "Open DB Conn...";
+            this.toolStripLabel2.Size = new System.Drawing.Size(181, 36);
+            this.toolStripLabel2.Text = "Open DB Conn.";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // toolStripButton3
@@ -332,8 +332,8 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(174, 36);
-            this.toolStripLabel3.Text = "Drop DB Conn...";
+            this.toolStripLabel3.Size = new System.Drawing.Size(175, 36);
+            this.toolStripLabel3.Text = "Drop DB Conn.";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // Form1

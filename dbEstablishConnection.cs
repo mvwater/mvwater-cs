@@ -37,6 +37,46 @@ namespace mvwater_netfw
         {
             this.Close();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public string serverType
+        {
+            get { return formServerType.Text; }
+        }
+
+        public string serverName
+        {
+            get { return formServerName.Text; }
+        }
+
+        public string username
+        {
+            get { return formServerName.Text; }
+        }
+
+        public string password
+        {
+            get { return formServerName.Text; }
+        }
     }
     public class estConnection
     {
@@ -56,6 +96,27 @@ namespace mvwater_netfw
             {
                 MessageBox.Show("Connection failed to open!");
             }
+        }
+        public string FormConnectionString()
+        {
+            //grab the proper information from the form
+            //declare applicable vars
+            string serverType;
+            string serverName;
+            string UserName;
+            string password;
+
+            //fill the strings with form information
+            serverType = "Microsoft SQL Server";
+            serverName = "mvad-water";
+            UserName = "mvwateradmin";
+            password = "*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE";
+
+            //form the connection string
+            string connectionString = null;
+            SqlConnection cnn;
+            connectionString = "Data Source=serverName;Initial Catalog=databaseName;User ID=UserName;Password=password";
+            return connectionString;
         }
     }
 }

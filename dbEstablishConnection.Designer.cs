@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.formServerType = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.formServerName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.formUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.formPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,19 +51,20 @@
             this.label1.Text = "Server Type";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox1
+            // formServerType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.formServerType.FormattingEnabled = true;
+            this.formServerType.Items.AddRange(new object[] {
             "Microsoft SQL Server",
             "MySQL 5.x",
             "PostgreSQL",
             "Oracle SQL",
             "MongoDB"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(300, 21);
-            this.comboBox1.TabIndex = 1;
+            this.formServerType.Location = new System.Drawing.Point(30, 70);
+            this.formServerType.Name = "formServerType";
+            this.formServerType.Size = new System.Drawing.Size(300, 21);
+            this.formServerType.TabIndex = 1;
+            this.formServerType.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -74,12 +75,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Server Name";
             // 
-            // textBox1
+            // formServerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 20);
-            this.textBox1.TabIndex = 3;
+            this.formServerName.Location = new System.Drawing.Point(30, 120);
+            this.formServerName.Name = "formServerName";
+            this.formServerName.Size = new System.Drawing.Size(300, 20);
+            this.formServerName.TabIndex = 3;
+            this.formServerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -90,12 +92,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Username";
             // 
-            // textBox2
+            // formUsername
             // 
-            this.textBox2.Location = new System.Drawing.Point(30, 170);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 5;
+            this.formUsername.Location = new System.Drawing.Point(30, 170);
+            this.formUsername.Name = "formUsername";
+            this.formUsername.Size = new System.Drawing.Size(140, 20);
+            this.formUsername.TabIndex = 5;
+            this.formUsername.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 
@@ -106,13 +109,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Password";
             // 
-            // textBox3
+            // formPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(30, 220);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(140, 20);
-            this.textBox3.TabIndex = 7;
+            this.formPassword.Location = new System.Drawing.Point(30, 220);
+            this.formPassword.Name = "formPassword";
+            this.formPassword.PasswordChar = '*';
+            this.formPassword.Size = new System.Drawing.Size(140, 20);
+            this.formPassword.TabIndex = 7;
+            this.formPassword.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
             // 
@@ -141,7 +145,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(29, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(203, 24);
+            this.label5.Size = new System.Drawing.Size(394, 44);
             this.label5.TabIndex = 10;
             this.label5.Text = "Connect to Database";
             // 
@@ -155,13 +159,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.formPassword);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.formUsername);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.formServerName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.formServerType);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "dbEstablishConnection";
@@ -175,13 +179,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox formServerType;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox formServerName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox formUsername;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox formPassword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
