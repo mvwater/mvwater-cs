@@ -14,7 +14,9 @@ Desktop version testing. Don't try to use this, it's all steaming piles of scuff
 
 ## Installation
 
-No installation required. You may run the `.exe` file inside of the `/bin/Debug/` folder, which will remained tracked with daily builds. Do not edit the `.config` or `pdb` files.
+No installation required. You may run the `.exe` file inside of the `/bin/Debug/` folder, which will remained tracked with daily builds. Do not edit the `.config` or `.pdb` files.
+
+The software is currently still in active development and thus is using the debug build type, which adds in some extra debugging information to the compiled files (the aforementioned `.pdb` files). Release software will not have this file.
 
 As it stands, the program is still too small to warrant adaptation for an installer. As it gains heft, installation may be transitioned to an open-source installer.
 
