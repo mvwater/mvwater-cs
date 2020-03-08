@@ -50,6 +50,7 @@ We encourage you to use our templates when filing your issues, BUT if nothing fi
   + :penguin: `:penguin:` when fixing specific to Linux
   + :santa: `:santa:` when fixing issues specific to Windows Server
   + :bug: `:bug:` when fixing a bug
+  + :toilet: `:toilet:` when doing garbage collection
   + :fire: `:fire:` when removing code or files
   + :white_check_mark: `:white_check_mark:` when adding testing programs
   + :lock: `:lock:` when dealing with security
@@ -57,6 +58,7 @@ We encourage you to use our templates when filing your issues, BUT if nothing fi
   + :arrow_down: `:arrow_down:` when REMOVING dependencies
   + :space_invader: `:space_invader:` when adding meeting notes
   + :tada: `:tada:` for initial commits
+  + :shit: `:shit:` for testing files
 
 ### GitHub Pull Requests
 
