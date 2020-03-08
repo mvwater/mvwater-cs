@@ -38,44 +38,9 @@ namespace mvwater_netfw
             this.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
-        }
-
-        public string serverType
-        {
-            get { return formServerType.Text; }
-        }
-
-        public string serverName
-        {
-            get { return formServerName.Text; }
-        }
-
-        public string username
-        {
-            get { return formServerName.Text; }
-        }
-
-        public string password
-        {
-            get { return formServerName.Text; }
         }
     }
     public class estConnection
