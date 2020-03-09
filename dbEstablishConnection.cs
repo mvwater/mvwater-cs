@@ -31,6 +31,28 @@ namespace mvwater_netfw
         private void button1_Click(object sender, EventArgs e)
         {
             //put code here to connect to database using provided information
+
+            //detect what's inside of textBox3
+            string settingsFile = string.Empty;
+            settingsFile = formXmlDoc.Text;
+
+            var readSettings = new parseXml();
+            string[] settingsArray = new string[4];
+            //settingsFile is the name of the file in the formXmlDoc element of the desktop software
+            settingsArray = readSettings.settingsParser(settingsFile);
+
+            //declare some variables for imos
+            //shove that array information into individually manipulatable objects
+            string databaseType = string.Empty;
+            string serverName = string.Empty;
+            string username = string.Empty;
+            string password = string.Empty;
+
+            databaseType = settingsArray[0];
+            serverName = settingsArray[1];
+            username = settingsArray[2];
+            password = settingsArray[3];
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -40,7 +62,7 @@ namespace mvwater_netfw
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            //nothing to see here...
         }
     }
     public class estConnection

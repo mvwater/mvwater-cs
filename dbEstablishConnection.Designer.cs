@@ -32,7 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.formPassword = new System.Windows.Forms.TextBox();
+            this.formXmlDoc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -40,11 +40,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(30, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(218, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Connect to a Microsoft SQL Server instance.\n" +
-                "Please specify the settings file to load in.\n" +
-                "It should be a .JSON file.\n";
+            this.label1.Text = "Connect to a Microsoft SQL Server instance.\nPlease specify the settings file to l" +
+    "oad in.\nIt should be a .XML file.\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
@@ -78,13 +77,13 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Connect to Database";
             // 
-            // formPassword
+            // formXmlDoc
             // 
-            this.formPassword.Location = new System.Drawing.Point(30, 220);
-            this.formPassword.Name = "formJsonFile";
-            this.formPassword.Size = new System.Drawing.Size(140, 20);
-            this.formPassword.TabIndex = 7;
-            this.formPassword.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.formXmlDoc.Location = new System.Drawing.Point(30, 220);
+            this.formXmlDoc.Name = "formXmlDoc";
+            this.formXmlDoc.Size = new System.Drawing.Size(140, 20);
+            this.formXmlDoc.TabIndex = 7;
+            this.formXmlDoc.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // dbEstablishConnection
             // 
@@ -96,7 +95,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.formPassword);
+            this.Controls.Add(this.formXmlDoc);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "dbEstablishConnection";
@@ -113,6 +112,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox formPassword;
+        private System.Windows.Forms.TextBox formXmlDoc;
     }
 }

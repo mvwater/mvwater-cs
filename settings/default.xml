@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!-- MVAD SETTINGS FILE -->
+
+<databaseType>Microsoft SQL Server</databaseType>
+<serverName>testdb.database.windows.net</serverName>
+<username>*THISISNOTAVALIDUSERNAMETHATCANBEUSEDHERE</username>
+<password>*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</password>
+
+<!-- You can leave comments for yourself like this. -->
