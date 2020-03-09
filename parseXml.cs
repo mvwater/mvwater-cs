@@ -26,7 +26,8 @@ namespace mvwater_netfw
         {
 
             //allow messageboxes to be shown
-            var showInfoBox = new messageBox();
+            var showInfoBox = new messageBox("");
+            showInfoBox.getANewMessage("");
 
             //initialize a new instance of the XmlDocument class
             XmlDocument settingsXDoc = new XmlDocument();
@@ -57,7 +58,7 @@ namespace mvwater_netfw
                     //show a messagebox with the user's chosen settings file
                     string infoMessage = string.Empty;
                     infoMessage = "Informational: Using " + shortUserFileName + " settings file.";
-                    getMessage.theMessage = infoMessage;
+                    showInfoBox.getANewMessage(infoMessage);
 
                     try //to load the XML file
                     {
@@ -68,7 +69,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 10: Unable to read the settings XML file.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 
@@ -88,7 +89,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 11: Settings load failure or failure during reading.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 
@@ -117,7 +118,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 12: Settings conversion failure.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 
@@ -148,7 +149,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 10: Unable to read the settings XML file.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 
@@ -168,7 +169,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 11: Settings load failure or failure during reading.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 
@@ -197,7 +198,7 @@ namespace mvwater_netfw
                         //show a messagebox with the error
                         string errorMessage = "ERROR 12: Settings conversion failure.";
                         //pass the error message into the messagebox function
-                        getMessage.theMessage = errorMessage;
+                        showInfoBox.getANewMessage(errorMessage);
                         validDoc = false;
                     }
 

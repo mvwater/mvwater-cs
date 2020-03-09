@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvwater-netfw", "mvwater-netfw.csproj", "{9AEC7CEA-86B8-4C03-B98D-B39C6E3286FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A11C1496-8E1E-4A80-AE6C-A56700484F1F}"
+	ProjectSection(SolutionItems) = preProject
+		runCodes.txt = runCodes.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

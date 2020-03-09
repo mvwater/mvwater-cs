@@ -30,7 +30,7 @@ namespace mvwater_netfw
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            try //to open and read the settings xml file
             {
                 //put code here to connect to database using provided information
                 //detect what's inside of textBox3
@@ -45,6 +45,8 @@ namespace mvwater_netfw
             catch
             {
                 //message box goes here
+                var showMessage = new messageBox("ERROR 41: Unable to open or read the XML file.");
+                showMessage.getANewMessage("ERROR 41: Unable to open or read the XML file.");
 
             }
             try //to declare the empty variables for individually manipulable objects
@@ -69,8 +71,10 @@ namespace mvwater_netfw
             catch
             {
                 //message box goes here
+                var showMessage = new messageBox("ERROR 42: Unable to read the XML file.");
+                showMessage.getANewMessage("ERROR 42: Unable to read the XML file.");
             }
-            try
+            try //to convert strings from DB establish connection
             {
                 //put code here to connect to database using provided information
                 //detect what's inside of textBox3
@@ -97,11 +101,14 @@ namespace mvwater_netfw
                 //assume correctness
                 //close the active window
                 this.Close();
+                var showMessage = new messageBox("Success: Settings read success. (INFO 44)");
+                showMessage.getANewMessage("Success: Settings read success. (INFO 44)");
             }
             catch
             {
                 //message box
-
+                var showMessage = new messageBox("ERROR 43: Unable to convert XML array to string.");
+                showMessage.getANewMessage("ERROR 43: Unable to convert XML array to string.");
             }
 
         }

@@ -63,7 +63,7 @@ namespace mvwater_netfw
             catch
             {
                 //messageBox with error message
-                string errorMessage = "Error 1: Invalid search query type.";
+                string errorMessage = "ERROR 01: Invalid search query type.";
                 string caption = "";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 DialogResult result;

@@ -1,0 +1,60 @@
+Error Codes
+ERROR 01: Search error. Invalid search query type.
+ERROR 02: Search error. Reserved for future error codes.
+ERROR 03: Search error. Reserved for future error codes.
+ERROR 04: Search error. Reserved for future error codes.
+ERROR 05: Search error. Reserved for future error codes.
+ERROR 06: Search error. Reserved for future error codes.
+ERROR 07: Search error. Reserved for future error codes.
+ERROR 08: Search error. Reserved for future error codes.
+ERROR 09: Search error. Reserved for future error codes.
+ERROR 10: XML parsing error. Unable to read the settings XML file.
+ERROR 11: XML parsing error. Settings load failure or failure during reading.
+ERROR 12: XML parsing error. Settings conversion error into strings.
+ERROR 13: XML parsing error. Reserved for future error codes.
+ERROR 14: XML parsing error. Reserved for future error codes.
+ERROR 15: XML parsing error. Reserved for future error codes.
+ERROR 16: XML parsing error. Reserved for future error codes.
+ERROR 17: XML parsing error. Reserved for future error codes.
+ERROR 18: XML parsing error. Reserved for future error codes.
+ERROR 19: XML parsing error. Reserved for future error codes.
+ERROR 20: XML parsing error. Reserved for future error codes.
+ERROR 21: Reserved for future error codes.
+ERROR 22: Reserved for future error codes.
+ERROR 23: Reserved for future error codes.
+ERROR 24: Reserved for future error codes.
+ERROR 25: Reserved for future error codes.
+ERROR 26: Reserved for future error codes.
+ERROR 27: Reserved for future error codes.
+ERROR 28: Reserved for future error codes.
+ERROR 29: Reserved for future error codes.
+ERROR 30: Database connection error. Reserved for future error codes.
+ERROR 31: Database connection error. Reserved for future error codes.
+ERROR 32: Database connection error. Reserved for future error codes.
+ERROR 33: Database connection error. Reserved for future error codes.
+ERROR 34: Database connection error. Reserved for future error codes.
+ERROR 35: Database connection error. Reserved for future error codes.
+ERROR 36: Database connection error. Reserved for future error codes.
+ERROR 37: Database connection error. Reserved for future error codes.
+ERROR 38: Database connection error. Reserved for future error codes.
+ERROR 39: Database connection error. Reserved for future error codes.
+ERROR 40: Database connection error. Reserved for future error codes.
+ERROR 41: Database connection error. Unable to read or open the settings XML file with connection settings.
+ERROR 42: Database connection error. Unable to read the settings XML file.
+ERROR 43: Database connection error. Unable to convert the XML node objects to a string.
+INFO 44: Database connection information. Settings read success.
+ERROR 45: Database connection error. Reserved for future error codes.
+ERROR 46: Database connection error. Reserved for future error codes.
+ERROR 47: Database connection error. Reserved for future error codes.
+ERROR 48: Database connection error. Reserved for future error codes.
+ERROR 49: Database connection error. Reserved for future error codes.
+ERROR 50: Reserved for future error codes.
+ERROR 51: Reserved for future error codes.
+ERROR 52: Reserved for future error codes.
+ERROR 53: Reserved for future error codes.
+ERROR 54: Reserved for future error codes.
+ERROR 55: Reserved for future error codes.
+ERROR 56: Reserved for future error codes.
+ERROR 57: Reserved for future error codes.
+ERROR 58: Reserved for future error codes.
+ERROR 59: Reserved for future error codes.

@@ -12,9 +12,14 @@ namespace mvwater_netfw
 {
     public partial class messageBox : Form
     {
-        public messageBox()
+        public messageBox(string theMessage)
         {
             InitializeComponent();
+        }
+
+        public string getANewMessage(string theMessage)
+        {
+            return theMessage;
         }
 
         private void messageBox_Load(object sender, EventArgs e)
@@ -24,17 +29,14 @@ namespace mvwater_netfw
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            string theText = getMessage.theMessage;
-            infoBox.Text = theText;
+            var showInfoBox = new messageBox("");
+            string infoMessage = string.Empty;
+            showInfoBox.getANewMessage(infoMessage);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-    }
-    public static class getMessage
-    {
-        public static string theMessage { get; set; }
     }
 }
