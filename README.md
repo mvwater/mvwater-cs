@@ -18,7 +18,7 @@ No installation required. You may run the `.exe` file inside of the `/bin/Debug/
 
 The software is currently still in active development and thus is using the debug build type, which adds in some extra debugging information to the compiled files (the aforementioned `.pdb` files). Release software will not have this file.
 
-As it stands, the program is still too small to warrant adaptation for an installer. As it gains heft, installation may be transitioned to an open-source installer.
+As it stands, the program is still too small to warrant adaptation for an installer. As it gains heft, installation may be transitioned to an open-source installer. The most-likely solution is Inno Setup.
 
 ## Warnings
 
