@@ -46,8 +46,8 @@ namespace mvwater_netfw
             searchQuery = formSearchQuery.Text;
 
             //clean inputs for sql to use
-            string sqlSearchType;
-            string sqlSearchQuery;
+            string sqlSearchType = string.Empty;
+            string sqlSearchQuery = string.Empty;
 
             try
             {

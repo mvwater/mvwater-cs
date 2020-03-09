@@ -81,17 +81,20 @@ namespace mvwater_netfw
             }
             catch (Exception ex)
             {
+                string exceptionHumanReadable = string.Empty;
+                exceptionHumanReadable = ex.ToString();
                 MessageBox.Show("Connection failed to open!");
+                MessageBox.Show(exceptionHumanReadable);
             }
         }
         public string FormConnectionString()
         {
             //grab the proper information from the form
             //declare applicable vars
-            string serverType;
-            string serverName;
-            string UserName;
-            string password;
+            string serverType = string.Empty;
+            string serverName = string.Empty;
+            string UserName = string.Empty;
+            string password = string.Empty;
 
             //fill the strings with form information
             serverType = "Microsoft SQL Server";
@@ -101,7 +104,7 @@ namespace mvwater_netfw
 
             //form the connection string
             string connectionString = null;
-            SqlConnection cnn;
+            //SqlConnection cnn;
             connectionString = "Data Source=serverName;Initial Catalog=databaseName;User ID=UserName;Password=password";
             return connectionString;
         }
