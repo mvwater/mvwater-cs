@@ -30,28 +30,79 @@ namespace mvwater_netfw
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //put code here to connect to database using provided information
+            try
+            {
+                //put code here to connect to database using provided information
+                //detect what's inside of textBox3
+                string settingsFile = string.Empty;
+                settingsFile = formXmlDoc.Text;
 
-            //detect what's inside of textBox3
-            string settingsFile = string.Empty;
-            settingsFile = formXmlDoc.Text;
+                var readSettings = new parseXml();
+                string[] settingsArray = new string[4];
+                //settingsFile is the name of the file in the formXmlDoc element of the desktop software
+                settingsArray = readSettings.settingsParser(settingsFile);
+            }
+            catch
+            {
+                //message box goes here
 
-            var readSettings = new parseXml();
-            string[] settingsArray = new string[4];
-            //settingsFile is the name of the file in the formXmlDoc element of the desktop software
-            settingsArray = readSettings.settingsParser(settingsFile);
+            }
+            try //to declare the empty variables for individually manipulable objects
+            {
+                //put code here to connect to database using provided information
+                //detect what's inside of textBox3
+                string settingsFile = string.Empty;
+                settingsFile = formXmlDoc.Text;
 
-            //declare some variables for imos
-            //shove that array information into individually manipulatable objects
-            string databaseType = string.Empty;
-            string serverName = string.Empty;
-            string username = string.Empty;
-            string password = string.Empty;
+                var readSettings = new parseXml();
+                string[] settingsArray = new string[4];
+                //settingsFile is the name of the file in the formXmlDoc element of the desktop software
+                settingsArray = readSettings.settingsParser(settingsFile);
 
-            databaseType = settingsArray[0];
-            serverName = settingsArray[1];
-            username = settingsArray[2];
-            password = settingsArray[3];
+                //declare some variables for imos
+                //shove that array information into individually manipulatable objects
+                string databaseType = string.Empty;
+                string serverName = string.Empty;
+                string username = string.Empty;
+                string password = string.Empty;
+            }
+            catch
+            {
+                //message box goes here
+            }
+            try
+            {
+                //put code here to connect to database using provided information
+                //detect what's inside of textBox3
+                string settingsFile = string.Empty;
+                settingsFile = formXmlDoc.Text;
+
+                var readSettings = new parseXml();
+                string[] settingsArray = new string[4];
+                //settingsFile is the name of the file in the formXmlDoc element of the desktop software
+                settingsArray = readSettings.settingsParser(settingsFile);
+
+                //declare some variables for imos
+                //shove that array information into individually manipulatable objects
+                string databaseType = string.Empty;
+                string serverName = string.Empty;
+                string username = string.Empty;
+                string password = string.Empty;
+
+                databaseType = settingsArray[0];
+                serverName = settingsArray[1];
+                username = settingsArray[2];
+                password = settingsArray[3];
+
+                //assume correctness
+                //close the active window
+                this.Close();
+            }
+            catch
+            {
+                //message box
+
+            }
 
         }
 
