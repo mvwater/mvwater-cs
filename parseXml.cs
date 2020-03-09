@@ -24,6 +24,10 @@ namespace mvwater_netfw
         //create a function called settingsParser that reads in settings document and parses it
         public string[] settingsParser(string shortUserFileName)
         {
+
+            //allow messageboxes to be shown
+            var showInfoBox = new messageBox();
+
             //initialize a new instance of the XmlDocument class
             XmlDocument settingsXDoc = new XmlDocument();
 
@@ -51,10 +55,9 @@ namespace mvwater_netfw
                     settingsXDocFName = string.Concat(settingsPath, settingsFilename);
 
                     //show a messagebox with the user's chosen settings file
-                    // code needs to go here for hte message box for confirmation
-                    // write a class/function pair to do this
                     string infoMessage = string.Empty;
                     infoMessage = "Informational: Using " + shortUserFileName + " settings file.";
+                    getMessage.theMessage = infoMessage;
 
                     try //to load the XML file
                     {
@@ -63,9 +66,9 @@ namespace mvwater_netfw
                     catch //a failed load
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 10: Unable to read the settings XML file.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
@@ -83,9 +86,9 @@ namespace mvwater_netfw
                     catch
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 11: Settings load failure or failure during reading.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
@@ -112,9 +115,9 @@ namespace mvwater_netfw
                     catch //a settings conversion failure into strings
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 12: Settings conversion failure.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
@@ -143,9 +146,9 @@ namespace mvwater_netfw
                     catch //a failed load
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 10: Unable to read the settings XML file.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
@@ -163,9 +166,9 @@ namespace mvwater_netfw
                     catch
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 11: Settings load failure or failure during reading.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
@@ -192,9 +195,9 @@ namespace mvwater_netfw
                     catch //a settings conversion failure into strings
                     {
                         //show a messagebox with the error
-                        // code needs to go here
                         string errorMessage = "ERROR 12: Settings conversion failure.";
                         //pass the error message into the messagebox function
+                        getMessage.theMessage = errorMessage;
                         validDoc = false;
                     }
 
