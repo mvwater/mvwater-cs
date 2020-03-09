@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvwater-netfw", "mvwater-ne
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A11C1496-8E1E-4A80-AE6C-A56700484F1F}"
 	ProjectSection(SolutionItems) = preProject
-		runCodes.txt = runCodes.txt
+		docs\runCodes.txt = docs\runCodes.txt
 	EndProjectSection
 EndProject
 Global
