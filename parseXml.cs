@@ -16,6 +16,7 @@ namespace mvwater_netfw
         //Frame adapted from kim3-sudo Chisel
         //https://github.com/kim3-sudo/chisel/blob/master/xmlparse.cs as of hash 77a5740
 
+        #region XML Parsing Code
         string databaseType = string.Empty;
         string serverName = string.Empty;
         string username = string.Empty;
@@ -208,6 +209,7 @@ namespace mvwater_netfw
                     validDoc = true;
                 }
             }
+            #endregion
             string[] comboinfo = new string[4];
             comboinfo[0] = databaseType;
             comboinfo[1] = serverName;
