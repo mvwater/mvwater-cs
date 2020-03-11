@@ -145,7 +145,7 @@ namespace mvwater_netfw
                 MessageBox.Show(exceptionHumanReadable);
             }
         }
-        public string FormConnectionString()
+        public string FormConnectionString(string settingsDocument)
         {
             //grab the proper information from the form
             //declare applicable vars
@@ -153,17 +153,23 @@ namespace mvwater_netfw
             string serverName = string.Empty;
             string UserName = string.Empty;
             string password = string.Empty;
+            string[] newServerInfo = new string[4];
 
-            //fill the strings with form information
-            serverType = "Microsoft SQL Server";
-            serverName = "mvad-water";
-            UserName = "mvwateradmin";
-            password = "*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE";
+            //fill the strings with xml information
+            //call the function in class
+            var newServerInstance = new parseXml();
+
+            newServerInfo = newServerInstance.settingsParser(settingsDocument);
+            serverType = newServerInfo[0];
+            serverName = newServerInfo[1];
+            UserName = newServerInfo[2];
+            password = newServerInfo[3];
 
             //form the connection string
             string connectionString = null;
             //SqlConnection cnn;
-            connectionString = "Data Source=serverName;Initial Catalog=databaseName;User ID=UserName;Password=password";
+            connectionString = string.Empty;
+            connectionString = string.Concat("serverType=",serverType,";serverName=",serverName,";UserName=",UserName,";password=",password,";");
             return connectionString;
         }
     }
