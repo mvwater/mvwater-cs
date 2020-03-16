@@ -81,7 +81,7 @@ namespace mvwater_netfw
 
             //retrieve the connection string
             var epsilon = new estConnection();
-            epsilon.FormConnectionString();
+            //epsilon.FormConnectionString();
 
             //apply the connection string to the pre-query script
 
