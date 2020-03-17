@@ -1,5 +1,13 @@
 # mvwater-test
 
+---
+
+Build Status
+
+[![Build Status](https://travis-ci.org/mvwater/mvwater-cs.svg?branch=master)](https://travis-ci.org/mvwater/mvwater-cs)
+
+---
+
 Desktop version testing. Don't try to use this, it's all steaming piles of scuffed rat shit.
 
 ## Dependencies
