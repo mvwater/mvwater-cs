@@ -2,6 +2,7 @@ language: csharp
 solution: mvwater-netfw.sln
 dotnet: 2.1.502
 notifications:
+  slack: kcwater:mNBKPYQfal7YQUJWRhMMUECd
   email:
     recipients:
       - kim3@kenyon.edu
